@@ -1,106 +1,168 @@
+a)
+******************** MultinomialNB default values try 1 ********************
+b)
+[[388   0   9   0   8]
+ [  0 273  18   0  16]
+ [ 12   0 322   0   2]
+ [  3   2   1 399   0]
+ [  2   0   0   2 323]]
+c)
+              precision    recall  f1-score   support
+
+           0       0.96      0.96      0.96       405
+           1       0.99      0.89      0.94       307
+           2       0.92      0.96      0.94       336
+           3       1.00      0.99      0.99       405
+           4       0.93      0.99      0.96       327
+
+    accuracy                           0.96      1780
+   macro avg       0.96      0.96      0.96      1780
+weighted avg       0.96      0.96      0.96      1780
+
+d)
+accuracy: 0.9578651685393258
+macro average F1: 0.9561280549843014
+weighted average F1: 0.9578130310509945
 e)
 Probability of class business: 0.2292134831460674
 Probability of class entertainment: 0.17348314606741572
 Probability of class politics: 0.18741573033707865
 Probability of class sport: 0.22966292134831462
 Probability of class tech: 0.1802247191011236
+f)
+Size of vocabulary: 29126
+g)
+Number of word-tokens in each class:
+business: 18855.0
+entertainment: 13749.0
+politics: 17948.0
+sport: 17553.0
+tech: 19138.0
+h)
+Number of word-tokens in corpus: 87243.0
 a)
-******************** MultinomialNB default values try 1********************
+******************** MultinomialNB default values try 2 ********************
 b)
-[[379   0   7   0  10]
- [  0 284  12   1  12]
- [  9   0 317   0   2]
- [  1   0   2 421   0]
- [  6   3   2   1 311]]
+[[388   0   9   0   8]
+ [  0 273  18   0  16]
+ [ 12   0 322   0   2]
+ [  3   2   1 399   0]
+ [  2   0   0   2 323]]
 c)
               precision    recall  f1-score   support
 
-           0       0.96      0.96      0.96       396
-           1       0.99      0.92      0.95       309
-           2       0.93      0.97      0.95       328
-           3       1.00      0.99      0.99       424
-           4       0.93      0.96      0.95       323
+           0       0.96      0.96      0.96       405
+           1       0.99      0.89      0.94       307
+           2       0.92      0.96      0.94       336
+           3       1.00      0.99      0.99       405
+           4       0.93      0.99      0.96       327
 
     accuracy                           0.96      1780
    macro avg       0.96      0.96      0.96      1780
 weighted avg       0.96      0.96      0.96      1780
 
 d)
-accuracy: 0.9617977528089887
-macro average F1:0.9599576308218195
-weighted average F1:0.9618500375899481
+accuracy: 0.9578651685393258
+macro average F1: 0.9561280549843014
+weighted average F1: 0.9578130310509945
+e)
+Probability of class business: 0.2292134831460674
+Probability of class entertainment: 0.17348314606741572
+Probability of class politics: 0.18741573033707865
+Probability of class sport: 0.22966292134831462
+Probability of class tech: 0.1802247191011236
+f)
+Size of vocabulary: 29126
+g)
+Number of word-tokens in each class:
+business: 18855.0
+entertainment: 13749.0
+politics: 17948.0
+sport: 17553.0
+tech: 19138.0
+h)
+Number of word-tokens in corpus: 87243.0
 a)
-******************** MultinomialNB default values try 2********************
+******************** MultinomialNB default values try 3 ********************
 b)
-[[379   0   7   0  10]
- [  0 284  12   1  12]
- [  9   0 317   0   2]
- [  1   0   2 421   0]
- [  6   3   2   1 311]]
+[[383   1   9   0  12]
+ [  1 279  11   0  16]
+ [ 13   1 320   0   2]
+ [  2   1   1 401   0]
+ [  3   3   1   0 320]]
 c)
               precision    recall  f1-score   support
 
-           0       0.96      0.96      0.96       396
-           1       0.99      0.92      0.95       309
-           2       0.93      0.97      0.95       328
-           3       1.00      0.99      0.99       424
-           4       0.93      0.96      0.95       323
+           0       0.95      0.95      0.95       405
+           1       0.98      0.91      0.94       307
+           2       0.94      0.95      0.94       336
+           3       1.00      0.99      1.00       405
+           4       0.91      0.98      0.95       327
 
     accuracy                           0.96      1780
    macro avg       0.96      0.96      0.96      1780
 weighted avg       0.96      0.96      0.96      1780
 
 d)
-accuracy: 0.9617977528089887
-macro average F1:0.9599576308218195
-weighted average F1:0.9618500375899481
+accuracy: 0.9567415730337079
+macro average F1: 0.9552198516248354
+weighted average F1: 0.9567858197884771
+e)
+Probability of class business: 0.2292134831460674
+Probability of class entertainment: 0.17348314606741572
+Probability of class politics: 0.18741573033707865
+Probability of class sport: 0.22966292134831462
+Probability of class tech: 0.1802247191011236
+f)
+Size of vocabulary: 29126
+g)
+Number of word-tokens in each class:
+business: 18855.0
+entertainment: 13749.0
+politics: 17948.0
+sport: 17553.0
+tech: 19138.0
+h)
+Number of word-tokens in corpus: 87243.0
 a)
-******************** MultinomialNB default values try 3********************
+******************** MultinomialNB default values try 4 ********************
 b)
-[[376   0   6   0  14]
- [  2 284   7   0  16]
- [  7   0 320   0   1]
- [  3   0   3 418   0]
- [  2   2   3   1 315]]
+[[388   0   9   0   8]
+ [  0 274  18   0  15]
+ [ 12   0 322   0   2]
+ [  3   2   1 399   0]
+ [  2   0   0   2 323]]
 c)
               precision    recall  f1-score   support
 
-           0       0.96      0.95      0.96       396
-           1       0.99      0.92      0.95       309
-           2       0.94      0.98      0.96       328
-           3       1.00      0.99      0.99       424
-           4       0.91      0.98      0.94       323
+           0       0.96      0.96      0.96       405
+           1       0.99      0.89      0.94       307
+           2       0.92      0.96      0.94       336
+           3       1.00      0.99      0.99       405
+           4       0.93      0.99      0.96       327
 
     accuracy                           0.96      1780
    macro avg       0.96      0.96      0.96      1780
 weighted avg       0.96      0.96      0.96      1780
 
 d)
-accuracy: 0.9623595505617978
-macro average F1:0.9608570899391401
-weighted average F1:0.9624835187319575
-a)
-******************** MultinomialNB default values try 4********************
-b)
-[[379   0   6   0  11]
- [  0 288   8   1  12]
- [  9   0 317   0   2]
- [  1   0   2 421   0]
- [  6   3   2   1 311]]
-c)
-              precision    recall  f1-score   support
-
-           0       0.96      0.96      0.96       396
-           1       0.99      0.93      0.96       309
-           2       0.95      0.97      0.96       328
-           3       1.00      0.99      0.99       424
-           4       0.93      0.96      0.94       323
-
-    accuracy                           0.96      1780
-   macro avg       0.96      0.96      0.96      1780
-weighted avg       0.96      0.96      0.96      1780
-
-d)
-accuracy: 0.9640449438202248
-macro average F1:0.962498244251288
-weighted average F1:0.9641203526011777
+accuracy: 0.9584269662921349
+macro average F1: 0.9567754749938328
+weighted average F1: 0.9583872470172128
+e)
+Probability of class business: 0.2292134831460674
+Probability of class entertainment: 0.17348314606741572
+Probability of class politics: 0.18741573033707865
+Probability of class sport: 0.22966292134831462
+Probability of class tech: 0.1802247191011236
+f)
+Size of vocabulary: 29126
+g)
+Number of word-tokens in each class:
+business: 18855.0
+entertainment: 13749.0
+politics: 17948.0
+sport: 17553.0
+tech: 19138.0
+h)
+Number of word-tokens in corpus: 87243.0
