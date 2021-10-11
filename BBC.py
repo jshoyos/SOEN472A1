@@ -1,5 +1,4 @@
-from genericpath import isfile
-import os
+import sys
 import numpy as np
 import pandas as pd
 from matplotlib import pyplot as plt
@@ -18,7 +17,7 @@ def Write_to_file(txt):
     except Exception as e:
         print("ERROR SOMETHING HAPPENED WHEN WRITING TO FILE. EXCEPTION WAS THROWN")
         print(e)
-        exit
+        sys.exit()
 
 def Task1(try_numb, x_train, x_test, y_train, y_test, smoothing=None):
     vectorizer = CountVectorizer(stop_words='english')
@@ -46,7 +45,8 @@ def Task1(try_numb, x_train, x_test, y_train, y_test, smoothing=None):
     for key, value in classes_dic.items():
         prob = value/total_files
         Write_to_file("Probability of class " +  str(key) + ": " + str(prob) + "\n")
-    Write_to_file("f)\nSize of vocabulary: " + str(len(vectorizer.get_feature_names_out())) + "\n")
+    vocabulary_size = len(vectorizer.get_feature_names_out())
+    Write_to_file("f)\nSize of vocabulary: " + str(vocabulary_size) + "\n")
 
     Write_to_file("g)\nNumber of word-tokens in each class:\n")
     word_tokens = classification.feature_count_
@@ -54,14 +54,22 @@ def Task1(try_numb, x_train, x_test, y_train, y_test, smoothing=None):
     for i in range(0,len(word_tokens)):
         tokens = np.sum(word_tokens[i])
         Write_to_file(str(data.target_names[i]) + ": " + str(tokens) + "\n")
-        total_count_word_tokens += tokens
+
+    total_count_word_tokens = np.sum(word_tokens)
     Write_to_file("h)\nNumber of word-tokens in corpus: " + str(total_count_word_tokens) + "\n")
+
+    Write_to_file("i)\n")
+    for i in range(0,len(word_tokens)):
+        zeros_in_class = np.count_nonzero(word_tokens[i] == 0)
+        Write_to_file(f"Number of zeros in {data.target_names[i]}: {zeros_in_class}\n With percentage of {zeros_in_class*100/vocabulary_size}\n")
+    
+    ones_in_class = np.count_nonzero(word_tokens == 1)
+    Write_to_file(f"j)\nNumber of ones in {data.target_names[i]}: {ones_in_class}\n With percentage of {ones_in_class * 100/vocabulary_size}\n")
 
 data = ds.load_files(BBC_PATH, encoding="latin1")
 
 labels, counts = np.unique(data.target, return_counts=True)
 classes_dic = dict(zip(np.array(data.target_names)[labels], counts))
-print(classes_dic)
 
 plt.title("Class distribution of the BBC dataset")
 plt.xlabel("classes")
