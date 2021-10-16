@@ -1,0 +1,4 @@
+Question 11
+a)  According to the distribution of the classes we believe the best metric suited to this dataset is the accuracy.
+In fact, the dataset is well balanced meaning there is not a big difference between the number of instances in each class is not very big,
+and all the classes have the same importance in this situation. Because of these reasons we consider the accuracy to be a good metric.
