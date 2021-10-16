@@ -79,7 +79,7 @@ plt.bar([1, 2, 3, 4, 5], counts)
 plt.savefig("BBC-distribution.pdf")
 
 x_train, x_test, y_train, y_test = train_test_split(
-    data.data, data.target, train_size=0.2, test_size=0.8)
+    data.data, data.target, train_size=0.8, test_size=0.2)
 total_files = np.sum(counts)
 
 Task1(1, x_train, x_test, y_train, y_test)
