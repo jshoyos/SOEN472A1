@@ -74,3 +74,79 @@ d)
 accuracy: 0.98
 macro average F1: 0.9664335664335664
 weighted average F1: 0.9798601398601399
+a)
+******************** Perceptron Classifier ********************
+b)
+[[ 4  0  0  0  3]
+ [ 2  0  0  0  0]
+ [ 1  0  3  0  0]
+ [ 7  0  1  0  7]
+ [ 1  0  1  0 20]]
+c)
+              precision    recall  f1-score   support
+
+       drugA       0.27      0.57      0.36         7
+       drugB       0.00      0.00      0.00         2
+       drugC       0.60      0.75      0.67         4
+       drugX       0.00      0.00      0.00        15
+       drugY       0.67      0.91      0.77        22
+
+    accuracy                           0.54        50
+   macro avg       0.31      0.45      0.36        50
+weighted avg       0.38      0.54      0.44        50
+
+d)
+accuracy: 0.54
+macro average F1: 0.3599067599067599
+weighted average F1: 0.4427039627039626
+a)
+******************** Base Multi-Layered Perceptron Classifier ********************
+b)
+[[ 0  0  0  3  4]
+ [ 0  0  0  2  0]
+ [ 0  0  0  3  1]
+ [ 0  0  0  7  8]
+ [ 0  0  0  1 21]]
+c)
+              precision    recall  f1-score   support
+
+       drugA       0.00      0.00      0.00         7
+       drugB       0.00      0.00      0.00         2
+       drugC       0.00      0.00      0.00         4
+       drugX       0.44      0.47      0.45        15
+       drugY       0.62      0.95      0.75        22
+
+    accuracy                           0.56        50
+   macro avg       0.21      0.28      0.24        50
+weighted avg       0.40      0.56      0.47        50
+
+d)
+accuracy: 0.56
+macro average F1: 0.2403225806451613
+weighted average F1: 0.4654838709677419
+a)
+******************** Top Multi-Layered Perceptron Classifier ********************
+b)
+[[ 0  0  0  3  4]
+ [ 0  0  0  2  0]
+ [ 0  0  0  3  1]
+ [ 0  0  0  7  8]
+ [ 0  0  0  1 21]]
+c)
+              precision    recall  f1-score   support
+
+       drugA       0.00      0.00      0.00         7
+       drugB       0.00      0.00      0.00         2
+       drugC       0.00      0.00      0.00         4
+       drugX       0.44      0.47      0.45        15
+       drugY       0.62      0.95      0.75        22
+
+    accuracy                           0.56        50
+   macro avg       0.21      0.28      0.24        50
+weighted avg       0.40      0.56      0.47        50
+
+d)
+accuracy: 0.56
+macro average F1: 0.2403225806451613
+weighted average F1: 0.4654838709677419
+
