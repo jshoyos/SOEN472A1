@@ -64,7 +64,7 @@ def Task1(try_numb, x_train, x_test, y_train, y_test, smoothing=None):
         Write_to_file(f"Number of zeros in {data.target_names[i]}: {zeros_in_class}\n With percentage of {zeros_in_class*100/np.sum(word_tokens[i])}\n")
     
     ones_in_class = np.count_nonzero(word_tokens == 1)
-    Write_to_file(f"j)\nNumber of ones in corpus: {ones_in_class}\n With percentage of {ones_in_class * 100/np.sum(word_tokens[i])}\n")
+    Write_to_file(f"j)\nNumber of ones in corpus: {ones_in_class}\n With percentage of {ones_in_class * 100/total_count_word_tokens}\n")
 
 data = ds.load_files(BBC_PATH, encoding="latin1")
 
