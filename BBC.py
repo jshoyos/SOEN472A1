@@ -28,9 +28,9 @@ def Task1(try_numb, x_train, x_test, y_train, y_test, smoothing=None):
     classification.fit(vectorizer.transform(x_train), y_train)
 
     y_pred = classification.predict(vectorizer.transform(x_test))
-
+    addHeader = f" with smoothing = {smoothing}" if (smoothing != None) else ""
     Write_to_file("a)\n******************** MultinomialNB default values try " +
-                        str(try_numb) + " ********************\n")
+                        str(try_numb) + addHeader + " ********************\n")
     Write_to_file("b)\n" +
                         str(confusion_matrix(y_test, y_pred)) + "\n")
     Write_to_file(
@@ -50,21 +50,26 @@ def Task1(try_numb, x_train, x_test, y_train, y_test, smoothing=None):
 
     Write_to_file("g)\nNumber of word-tokens in each class:\n")
     word_tokens = classification.feature_count_
+
     total_count_word_tokens = 0
+    total_count_word_tokens = np.sum(word_tokens)
+    if (smoothing != None):
+        word_tokens = smoothing + word_tokens
+        total_count_word_tokens = total_count_word_tokens + (vocabulary_size*smoothing)
+
     for i in range(0,len(word_tokens)):
         tokens = np.sum(word_tokens[i])
         Write_to_file(str(data.target_names[i]) + ": " + str(tokens) + "\n")
 
-    total_count_word_tokens = np.sum(word_tokens)
     Write_to_file("h)\nNumber of word-tokens in corpus: " + str(total_count_word_tokens) + "\n")
 
     Write_to_file("i)\n")
     for i in range(0,len(word_tokens)):
         zeros_in_class = np.count_nonzero(word_tokens[i] == 0)
-        Write_to_file(f"Number of zeros in {data.target_names[i]}: {zeros_in_class}\n With percentage of {zeros_in_class*100/vocabulary_size}\n")
+        Write_to_file(f"Number of zeros in {data.target_names[i]}: {zeros_in_class}\n With percentage of {zeros_in_class*100/total_count_word_tokens}\n")
     
     ones_in_class = np.count_nonzero(word_tokens == 1)
-    Write_to_file(f"j)\nNumber of ones in {data.target_names[i]}: {ones_in_class}\n With percentage of {ones_in_class * 100/vocabulary_size}\n")
+    Write_to_file(f"j)\nNumber of ones in corpus: {ones_in_class}\n With percentage of {ones_in_class * 100/total_count_word_tokens}\n")
 
 data = ds.load_files(BBC_PATH, encoding="latin1")
 
@@ -79,7 +84,7 @@ plt.bar([1, 2, 3, 4, 5], counts)
 plt.savefig("BBC-distribution.pdf")
 
 x_train, x_test, y_train, y_test = train_test_split(
-    data.data, data.target, train_size=0.2, test_size=0.8)
+    data.data, data.target, train_size=0.8, test_size=0.2)
 total_files = np.sum(counts)
 
 Task1(1, x_train, x_test, y_train, y_test)

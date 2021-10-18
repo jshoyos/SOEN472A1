@@ -2,3 +2,10 @@ Question 11
 a)  According to the distribution of the classes we believe the best metric suited to this dataset is the accuracy.
 In fact, the dataset is well balanced meaning there is not a big difference between the number of instances in each class is not very big,
 and all the classes have the same importance in this situation. Because of these reasons we consider the accuracy to be a good metric.
+
+b) The performance of step 8 is the same as the performance of step 7 as expected. In fact, step 8 is not changing anything to the training not even the
+training set because this one is determined in a previous step. Therefore, getting a difference performance would be unexpected. As for
+the step 9 and 10 we defenitely expected to have a different performance since we applied smoothing in both of these steps. Wich was actually seen in step
+9. However, in step 10 we didn't have a difference in performance compared to step 7. An increase in the smoothing also means an increase in the bias 
+of the classes that has the most records. Meaning that after passing a certain threshold the accuracy of our model will actually start decreasing.
+In this case the value of our smoothing was not big enough to decrease the performance according to step 7 but it did decrease it according to step 9.
