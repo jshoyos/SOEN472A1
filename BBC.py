@@ -28,9 +28,9 @@ def Task1(try_numb, x_train, x_test, y_train, y_test, smoothing=None):
     classification.fit(vectorizer.transform(x_train), y_train)
 
     y_pred = classification.predict(vectorizer.transform(x_test))
-
+    addHeader = f" with smoothing = {smoothing}" if (smoothing != None) else ""
     Write_to_file("a)\n******************** MultinomialNB default values try " +
-                        str(try_numb) + " ********************\n")
+                        str(try_numb) + addHeader + " ********************\n")
     Write_to_file("b)\n" +
                         str(confusion_matrix(y_test, y_pred)) + "\n")
     Write_to_file(
@@ -50,6 +50,9 @@ def Task1(try_numb, x_train, x_test, y_train, y_test, smoothing=None):
 
     Write_to_file("g)\nNumber of word-tokens in each class:\n")
     word_tokens = classification.feature_count_
+    if (smoothing != None):
+        word_tokens = smoothing + word_tokens
+
     total_count_word_tokens = 0
     for i in range(0,len(word_tokens)):
         tokens = np.sum(word_tokens[i])
