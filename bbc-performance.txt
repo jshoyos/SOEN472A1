@@ -1,28 +1,28 @@
 a)
 ******************** MultinomialNB default values try 1 ********************
 b)
-[[375   0   8   0  13]
- [  3 287   3   0  16]
- [ 11   0 331   0   5]
- [  2   0   2 406   0]
- [  0   2   0   1 315]]
+[[387   1  15   0   8]
+ [  1 283  12   0  18]
+ [  0   0 329   0   1]
+ [  0   0   1 405   0]
+ [  3   2   9   1 304]]
 c)
               precision    recall  f1-score   support
 
-           0       0.96      0.95      0.95       396
-           1       0.99      0.93      0.96       309
-           2       0.96      0.95      0.96       347
-           3       1.00      0.99      0.99       410
-           4       0.90      0.99      0.94       318
+           0       0.99      0.94      0.97       411
+           1       0.99      0.90      0.94       314
+           2       0.90      1.00      0.95       330
+           3       1.00      1.00      1.00       406
+           4       0.92      0.95      0.94       319
 
     accuracy                           0.96      1780
    macro avg       0.96      0.96      0.96      1780
 weighted avg       0.96      0.96      0.96      1780
 
 d)
-accuracy: 0.9629213483146067
-macro average F1: 0.9618583733230113
-weighted average F1: 0.9630723680813514
+accuracy: 0.9595505617977528
+macro average F1: 0.9573488950353685
+weighted average F1: 0.9596786462994402
 e)
 Probability of class business: 0.2292134831460674
 Probability of class entertainment: 0.17348314606741572
@@ -33,52 +33,53 @@ f)
 Size of vocabulary: 29126
 g)
 Number of word-tokens in each class:
-business: 19980.0
-entertainment: 13799.0
-politics: 16488.0
-sport: 18763.0
-tech: 24000.0
+business: 17999.0
+entertainment: 14422.0
+politics: 21168.0
+sport: 16766.0
+tech: 21404.0
 h)
-Number of word-tokens in corpus: 93030.0
+Number of word-tokens in corpus: 91759.0
 i)
-Number of zeros in business: 24223
- With percentage of 83.16624321911694
-Number of zeros in entertainment: 24454
- With percentage of 83.95934903522625
-Number of zeros in politics: 24570
- With percentage of 84.35761862253656
-Number of zeros in sport: 24199
- With percentage of 83.08384261484584
-Number of zeros in tech: 23036
- With percentage of 79.09084666620889
+Number of zeros in business: 4877
+ With percentage of 16.74448945958937
+Number of zeros in entertainment: 4861
+ With percentage of 16.68955572340864
+Number of zeros in politics: 5138
+ With percentage of 17.64059603103756
+Number of zeros in sport: 4489
+ With percentage of 15.41234635720662
+Number of zeros in tech: 5411
+ With percentage of 18.5779029046213
 j)
-Number of ones in tech: 12746
- With percentage of 43.76158758497562
-a)
+Number of ones in tech: 12508
+ With percentage of 42.944448259287235
+k)
+-10.04062649262921 and -10.733773673189155a)
 ******************** MultinomialNB default values try 2 ********************
 b)
-[[375   0   8   0  13]
- [  3 287   3   0  16]
- [ 11   0 331   0   5]
- [  2   0   2 406   0]
- [  0   2   0   1 315]]
+[[387   1  15   0   8]
+ [  1 283  12   0  18]
+ [  0   0 329   0   1]
+ [  0   0   1 405   0]
+ [  3   2   9   1 304]]
 c)
               precision    recall  f1-score   support
 
-           0       0.96      0.95      0.95       396
-           1       0.99      0.93      0.96       309
-           2       0.96      0.95      0.96       347
-           3       1.00      0.99      0.99       410
-           4       0.90      0.99      0.94       318
+           0       0.99      0.94      0.97       411
+           1       0.99      0.90      0.94       314
+           2       0.90      1.00      0.95       330
+           3       1.00      1.00      1.00       406
+           4       0.92      0.95      0.94       319
 
     accuracy                           0.96      1780
    macro avg       0.96      0.96      0.96      1780
 weighted avg       0.96      0.96      0.96      1780
 
 d)
-accuracy: 0.9629213483146067
-macro average F1: 0.9618583733230113
-weighted average F1: 0.9630723680813514
+accuracy: 0.9595505617977528
+macro average F1: 0.9573488950353685
+weighted average F1: 0.9596786462994402
 e)
 Probability of class business: 0.2292134831460674
 Probability of class entertainment: 0.17348314606741572
@@ -89,108 +90,53 @@ f)
 Size of vocabulary: 29126
 g)
 Number of word-tokens in each class:
-business: 19980.0
-entertainment: 13799.0
-politics: 16488.0
-sport: 18763.0
-tech: 24000.0
+business: 17999.0
+entertainment: 14422.0
+politics: 21168.0
+sport: 16766.0
+tech: 21404.0
 h)
-Number of word-tokens in corpus: 93030.0
+Number of word-tokens in corpus: 91759.0
 i)
-Number of zeros in business: 24223
- With percentage of 83.16624321911694
-Number of zeros in entertainment: 24454
- With percentage of 83.95934903522625
-Number of zeros in politics: 24570
- With percentage of 84.35761862253656
-Number of zeros in sport: 24199
- With percentage of 83.08384261484584
-Number of zeros in tech: 23036
- With percentage of 79.09084666620889
+Number of zeros in business: 4877
+ With percentage of 16.74448945958937
+Number of zeros in entertainment: 4861
+ With percentage of 16.68955572340864
+Number of zeros in politics: 5138
+ With percentage of 17.64059603103756
+Number of zeros in sport: 4489
+ With percentage of 15.41234635720662
+Number of zeros in tech: 5411
+ With percentage of 18.5779029046213
 j)
-Number of ones in tech: 12746
- With percentage of 43.76158758497562
-a)
+Number of ones in tech: 12508
+ With percentage of 42.944448259287235
+k)
+-10.04062649262921 and -10.733773673189155a)
 ******************** MultinomialNB default values try 3 ********************
 b)
-[[360   2  13   0  21]
- [  4 289   1   0  15]
- [ 13   4 323   0   7]
- [  3   0   1 406   0]
- [  0   4   0   0 314]]
+[[385   2  13   0  11]
+ [  2 287  13   0  12]
+ [  5   3 320   0   2]
+ [  0   0   1 405   0]
+ [  2   1   7   0 309]]
 c)
               precision    recall  f1-score   support
 
-           0       0.95      0.91      0.93       396
-           1       0.97      0.94      0.95       309
-           2       0.96      0.93      0.94       347
-           3       1.00      0.99      1.00       410
-           4       0.88      0.99      0.93       318
-
-    accuracy                           0.95      1780
-   macro avg       0.95      0.95      0.95      1780
-weighted avg       0.95      0.95      0.95      1780
-
-d)
-accuracy: 0.950561797752809
-macro average F1: 0.9494054098599897
-weighted average F1: 0.9507122131251137
-e)
-Probability of class business: 0.2292134831460674
-Probability of class entertainment: 0.17348314606741572
-Probability of class politics: 0.18741573033707865
-Probability of class sport: 0.22966292134831462
-Probability of class tech: 0.1802247191011236
-f)
-Size of vocabulary: 29126
-g)
-Number of word-tokens in each class:
-business: 19980.0
-entertainment: 13799.0
-politics: 16488.0
-sport: 18763.0
-tech: 24000.0
-h)
-Number of word-tokens in corpus: 93030.0
-i)
-Number of zeros in business: 24223
- With percentage of 83.16624321911694
-Number of zeros in entertainment: 24454
- With percentage of 83.95934903522625
-Number of zeros in politics: 24570
- With percentage of 84.35761862253656
-Number of zeros in sport: 24199
- With percentage of 83.08384261484584
-Number of zeros in tech: 23036
- With percentage of 79.09084666620889
-j)
-Number of ones in tech: 12746
- With percentage of 43.76158758497562
-a)
-******************** MultinomialNB default values try 4 ********************
-b)
-[[375   0   8   0  13]
- [  3 287   3   0  16]
- [ 10   0 332   0   5]
- [  2   0   2 406   0]
- [  0   2   0   1 315]]
-c)
-              precision    recall  f1-score   support
-
-           0       0.96      0.95      0.95       396
-           1       0.99      0.93      0.96       309
-           2       0.96      0.96      0.96       347
-           3       1.00      0.99      0.99       410
-           4       0.90      0.99      0.94       318
+           0       0.98      0.94      0.96       411
+           1       0.98      0.91      0.95       314
+           2       0.90      0.97      0.94       330
+           3       1.00      1.00      1.00       406
+           4       0.93      0.97      0.95       319
 
     accuracy                           0.96      1780
    macro avg       0.96      0.96      0.96      1780
 weighted avg       0.96      0.96      0.96      1780
 
 d)
-accuracy: 0.9634831460674157
-macro average F1: 0.9624020102728211
-weighted average F1: 0.9636356378443
+accuracy: 0.9584269662921349
+macro average F1: 0.9565993400257622
+weighted average F1: 0.9585578082574739
 e)
 Probability of class business: 0.2292134831460674
 Probability of class entertainment: 0.17348314606741572
@@ -201,24 +147,311 @@ f)
 Size of vocabulary: 29126
 g)
 Number of word-tokens in each class:
-business: 19980.0
-entertainment: 13799.0
-politics: 16488.0
-sport: 18763.0
-tech: 24000.0
+business: 17999.0
+entertainment: 14422.0
+politics: 21168.0
+sport: 16766.0
+tech: 21404.0
 h)
-Number of word-tokens in corpus: 93030.0
+Number of word-tokens in corpus: 91759.0
 i)
-Number of zeros in business: 24223
- With percentage of 83.16624321911694
-Number of zeros in entertainment: 24454
- With percentage of 83.95934903522625
-Number of zeros in politics: 24570
- With percentage of 84.35761862253656
-Number of zeros in sport: 24199
- With percentage of 83.08384261484584
-Number of zeros in tech: 23036
- With percentage of 79.09084666620889
+Number of zeros in business: 4877
+ With percentage of 16.74448945958937
+Number of zeros in entertainment: 4861
+ With percentage of 16.68955572340864
+Number of zeros in politics: 5138
+ With percentage of 17.64059603103756
+Number of zeros in sport: 4489
+ With percentage of 15.41234635720662
+Number of zeros in tech: 5411
+ With percentage of 18.5779029046213
 j)
-Number of ones in tech: 12746
- With percentage of 43.76158758497562
+Number of ones in tech: 12508
+ With percentage of 42.944448259287235
+k)
+-10.04062649262921 and -10.733773673189155a)
+******************** MultinomialNB default values try 4 ********************
+b)
+[[388   1  14   0   8]
+ [  1 284  12   0  17]
+ [  0   0 329   0   1]
+ [  0   0   1 405   0]
+ [  3   2   9   1 304]]
+c)
+              precision    recall  f1-score   support
+
+           0       0.99      0.94      0.97       411
+           1       0.99      0.90      0.95       314
+           2       0.90      1.00      0.95       330
+           3       1.00      1.00      1.00       406
+           4       0.92      0.95      0.94       319
+
+    accuracy                           0.96      1780
+   macro avg       0.96      0.96      0.96      1780
+weighted avg       0.96      0.96      0.96      1780
+
+d)
+accuracy: 0.9606741573033708
+macro average F1: 0.9585186051052299
+weighted average F1: 0.9607968655034355
+e)
+Probability of class business: 0.2292134831460674
+Probability of class entertainment: 0.17348314606741572
+Probability of class politics: 0.18741573033707865
+Probability of class sport: 0.22966292134831462
+Probability of class tech: 0.1802247191011236
+f)
+Size of vocabulary: 29126
+g)
+Number of word-tokens in each class:
+business: 17999.0
+entertainment: 14422.0
+politics: 21168.0
+sport: 16766.0
+tech: 21404.0
+h)
+Number of word-tokens in corpus: 91759.0
+i)
+Number of zeros in business: 4877
+ With percentage of 16.74448945958937
+Number of zeros in entertainment: 4861
+ With percentage of 16.68955572340864
+Number of zeros in politics: 5138
+ With percentage of 17.64059603103756
+Number of zeros in sport: 4489
+ With percentage of 15.41234635720662
+Number of zeros in tech: 5411
+ With percentage of 18.5779029046213
+j)
+Number of ones in tech: 12508
+ With percentage of 42.944448259287235
+k)
+-10.04062649262921 and -10.733773673189155a)
+******************** MultinomialNB default values try 1 ********************
+b)
+[[367   0  25   4  13]
+ [  4 228  31   9  54]
+ [  1   0 322   1   0]
+ [  0   0   0 397   0]
+ [  0   0   2   0 322]]
+c)
+              precision    recall  f1-score   support
+
+           0       0.99      0.90      0.94       409
+           1       1.00      0.70      0.82       326
+           2       0.85      0.99      0.91       324
+           3       0.97      1.00      0.98       397
+           4       0.83      0.99      0.90       324
+
+    accuracy                           0.92      1780
+   macro avg       0.93      0.92      0.91      1780
+weighted avg       0.93      0.92      0.92      1780
+
+d)
+accuracy: 0.9191011235955057
+macro average F1: 0.9127194473659023
+weighted average F1: 0.9167818122236486
+e)
+Probability of class business: 0.2292134831460674
+Probability of class entertainment: 0.17348314606741572
+Probability of class politics: 0.18741573033707865
+Probability of class sport: 0.22966292134831462
+Probability of class tech: 0.1802247191011236
+f)
+Size of vocabulary: 29421
+g)
+Number of word-tokens in each class:
+business: 31539.0
+entertainment: 20646.0
+politics: 37865.0
+sport: 35630.0
+tech: 38858.0
+h)
+Number of word-tokens in corpus: 164538.0
+i)
+Number of zeros in business: 5221
+ With percentage of 17.745827810067638
+Number of zeros in entertainment: 4609
+ With percentage of 15.665680976173482
+Number of zeros in politics: 5294
+ With percentage of 17.993949899731483
+Number of zeros in sport: 5079
+ With percentage of 17.263179361680432
+Number of zeros in tech: 5810
+ With percentage of 19.74779919105401
+j)
+Number of ones in tech: 12910
+ With percentage of 43.88022161041433
+k)
+-10.912284536881874 and -11.317749644990037a)
+******************** MultinomialNB default values try 2 ********************
+b)
+[[367   0  25   4  13]
+ [  4 228  31   9  54]
+ [  1   0 322   1   0]
+ [  0   0   0 397   0]
+ [  0   0   2   0 322]]
+c)
+              precision    recall  f1-score   support
+
+           0       0.99      0.90      0.94       409
+           1       1.00      0.70      0.82       326
+           2       0.85      0.99      0.91       324
+           3       0.97      1.00      0.98       397
+           4       0.83      0.99      0.90       324
+
+    accuracy                           0.92      1780
+   macro avg       0.93      0.92      0.91      1780
+weighted avg       0.93      0.92      0.92      1780
+
+d)
+accuracy: 0.9191011235955057
+macro average F1: 0.9127194473659023
+weighted average F1: 0.9167818122236486
+e)
+Probability of class business: 0.2292134831460674
+Probability of class entertainment: 0.17348314606741572
+Probability of class politics: 0.18741573033707865
+Probability of class sport: 0.22966292134831462
+Probability of class tech: 0.1802247191011236
+f)
+Size of vocabulary: 29421
+g)
+Number of word-tokens in each class:
+business: 31539.0
+entertainment: 20646.0
+politics: 37865.0
+sport: 35630.0
+tech: 38858.0
+h)
+Number of word-tokens in corpus: 164538.0
+i)
+Number of zeros in business: 5221
+ With percentage of 17.745827810067638
+Number of zeros in entertainment: 4609
+ With percentage of 15.665680976173482
+Number of zeros in politics: 5294
+ With percentage of 17.993949899731483
+Number of zeros in sport: 5079
+ With percentage of 17.263179361680432
+Number of zeros in tech: 5810
+ With percentage of 19.74779919105401
+j)
+Number of ones in tech: 12910
+ With percentage of 43.88022161041433
+k)
+-10.912284536881874 and -11.317749644990037a)
+******************** MultinomialNB default values try 3 ********************
+b)
+[[378   1  11   7  12]
+ [  3 293  10   0  20]
+ [  4   0 319   1   0]
+ [  0   0   1 396   0]
+ [  1   1   2   0 320]]
+c)
+              precision    recall  f1-score   support
+
+           0       0.98      0.92      0.95       409
+           1       0.99      0.90      0.94       326
+           2       0.93      0.98      0.96       324
+           3       0.98      1.00      0.99       397
+           4       0.91      0.99      0.95       324
+
+    accuracy                           0.96      1780
+   macro avg       0.96      0.96      0.96      1780
+weighted avg       0.96      0.96      0.96      1780
+
+d)
+accuracy: 0.9584269662921349
+macro average F1: 0.9573228067792451
+weighted average F1: 0.9582922413064338
+e)
+Probability of class business: 0.2292134831460674
+Probability of class entertainment: 0.17348314606741572
+Probability of class politics: 0.18741573033707865
+Probability of class sport: 0.22966292134831462
+Probability of class tech: 0.1802247191011236
+f)
+Size of vocabulary: 29421
+g)
+Number of word-tokens in each class:
+business: 31539.0
+entertainment: 20646.0
+politics: 37865.0
+sport: 35630.0
+tech: 38858.0
+h)
+Number of word-tokens in corpus: 164538.0
+i)
+Number of zeros in business: 5221
+ With percentage of 17.745827810067638
+Number of zeros in entertainment: 4609
+ With percentage of 15.665680976173482
+Number of zeros in politics: 5294
+ With percentage of 17.993949899731483
+Number of zeros in sport: 5079
+ With percentage of 17.263179361680432
+Number of zeros in tech: 5810
+ With percentage of 19.74779919105401
+j)
+Number of ones in tech: 12910
+ With percentage of 43.88022161041433
+k)
+-10.912284536881874 and -11.317749644990037a)
+******************** MultinomialNB default values try 4 ********************
+b)
+[[371   0  21   4  13]
+ [  3 241  28   8  46]
+ [  1   0 322   1   0]
+ [  0   0   0 397   0]
+ [  0   1   2   0 321]]
+c)
+              precision    recall  f1-score   support
+
+           0       0.99      0.91      0.95       409
+           1       1.00      0.74      0.85       326
+           2       0.86      0.99      0.92       324
+           3       0.97      1.00      0.98       397
+           4       0.84      0.99      0.91       324
+
+    accuracy                           0.93      1780
+   macro avg       0.93      0.93      0.92      1780
+weighted avg       0.94      0.93      0.93      1780
+
+d)
+accuracy: 0.9280898876404494
+macro average F1: 0.9229605441781829
+weighted average F1: 0.9264964791526472
+e)
+Probability of class business: 0.2292134831460674
+Probability of class entertainment: 0.17348314606741572
+Probability of class politics: 0.18741573033707865
+Probability of class sport: 0.22966292134831462
+Probability of class tech: 0.1802247191011236
+f)
+Size of vocabulary: 29421
+g)
+Number of word-tokens in each class:
+business: 31539.0
+entertainment: 20646.0
+politics: 37865.0
+sport: 35630.0
+tech: 38858.0
+h)
+Number of word-tokens in corpus: 164538.0
+i)
+Number of zeros in business: 5221
+ With percentage of 17.745827810067638
+Number of zeros in entertainment: 4609
+ With percentage of 15.665680976173482
+Number of zeros in politics: 5294
+ With percentage of 17.993949899731483
+Number of zeros in sport: 5079
+ With percentage of 17.263179361680432
+Number of zeros in tech: 5810
+ With percentage of 19.74779919105401
+j)
+Number of ones in tech: 12910
+ With percentage of 43.88022161041433
+k)
+-10.912284536881874 and -11.317749644990037
