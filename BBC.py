@@ -50,21 +50,23 @@ def Task1(try_numb, x_train, x_test, y_train, y_test, smoothing=None):
 
     Write_to_file("g)\nNumber of word-tokens in each class:\n")
     word_tokens = classification.feature_count_
-    if (smoothing != None):
-        word_tokens = smoothing + word_tokens
 
     total_count_word_tokens = 0
+    total_count_word_tokens = np.sum(word_tokens)
+    if (smoothing != None):
+        word_tokens = smoothing + word_tokens
+        total_count_word_tokens = total_count_word_tokens + (vocabulary_size*smoothing)
+
     for i in range(0,len(word_tokens)):
         tokens = np.sum(word_tokens[i])
         Write_to_file(str(data.target_names[i]) + ": " + str(tokens) + "\n")
 
-    total_count_word_tokens = np.sum(word_tokens)
     Write_to_file("h)\nNumber of word-tokens in corpus: " + str(total_count_word_tokens) + "\n")
 
     Write_to_file("i)\n")
     for i in range(0,len(word_tokens)):
         zeros_in_class = np.count_nonzero(word_tokens[i] == 0)
-        Write_to_file(f"Number of zeros in {data.target_names[i]}: {zeros_in_class}\n With percentage of {zeros_in_class*100/np.sum(word_tokens[i])}\n")
+        Write_to_file(f"Number of zeros in {data.target_names[i]}: {zeros_in_class}\n With percentage of {zeros_in_class*100/total_count_word_tokens}\n")
     
     ones_in_class = np.count_nonzero(word_tokens == 1)
     Write_to_file(f"j)\nNumber of ones in corpus: {ones_in_class}\n With percentage of {ones_in_class * 100/total_count_word_tokens}\n")
