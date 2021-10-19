@@ -1,28 +1,28 @@
 a)
 ******************** MultinomialNB default values try 1 ********************
 b)
-[[ 88   0   2   0   4]
- [  0  86   2   0   1]
- [  2   0  76   0   0]
- [  0   0   1 101   0]
- [  0   1   0   1  80]]
+[[117   1   1   0   1]
+ [  2  62   2   0   3]
+ [  0   0  79   0   1]
+ [  0   0   0 110   0]
+ [  0   0   0   0  66]]
 c)
               precision    recall  f1-score   support
 
-           0       0.98      0.94      0.96        94
-           1       0.99      0.97      0.98        89
-           2       0.94      0.97      0.96        78
-           3       0.99      0.99      0.99       102
-           4       0.94      0.98      0.96        82
+           0       0.98      0.97      0.98       120
+           1       0.98      0.90      0.94        69
+           2       0.96      0.99      0.98        80
+           3       1.00      1.00      1.00       110
+           4       0.93      1.00      0.96        66
 
-    accuracy                           0.97       445
+    accuracy                           0.98       445
    macro avg       0.97      0.97      0.97       445
-weighted avg       0.97      0.97      0.97       445
+weighted avg       0.98      0.98      0.98       445
 
 d)
-accuracy: 0.9685393258426966
-macro average F1: 0.967609843987432
-weighted average F1: 0.9685825352648981
+accuracy: 0.9752808988764045
+macro average F1: 0.9714571457824468
+weighted average F1: 0.9751093343844335
 e)
 Probability of class business: 0.2292134831460674
 Probability of class entertainment: 0.17348314606741572
@@ -33,52 +33,53 @@ f)
 Size of vocabulary: 29126
 g)
 Number of word-tokens in each class:
-business: 78228.0
-entertainment: 53926.0
-politics: 79428.0
-sport: 69395.0
-tech: 86181.0
+business: 70923.0
+entertainment: 58199.0
+politics: 78240.0
+sport: 67890.0
+tech: 87217.0
 h)
-Number of word-tokens in corpus: 367158.0
+Number of word-tokens in corpus: 362469.0
 i)
-Number of zeros in business: 18440
- With percentage of 23.572122513677968
-Number of zeros in entertainment: 19169
- With percentage of 35.54686051255424
-Number of zeros in politics: 19201
- With percentage of 24.174094777660272
-Number of zeros in sport: 19737
- With percentage of 28.441530369623173
-Number of zeros in tech: 18251
- With percentage of 21.177521727526948
+Number of zeros in business: 19075
+ With percentage of 5.262519001624966
+Number of zeros in entertainment: 18763
+ With percentage of 5.176442675097732
+Number of zeros in politics: 19231
+ With percentage of 5.305557164888584
+Number of zeros in sport: 19851
+ With percentage of 5.476606275295267
+Number of zeros in tech: 18422
+ With percentage of 5.0823656643740565
 j)
-Number of ones in corpus: 20916
- With percentage of 5.69673001813933
-a)
+Number of ones in corpus: 20560
+ With percentage of 5.6722092096151675
+k)
+The log probabilities of political and arrangement are: -9.088033027655857 and -10.987239650721653a)
 ******************** MultinomialNB default values try 2 ********************
 b)
-[[ 88   0   2   0   4]
- [  0  86   2   0   1]
- [  2   0  76   0   0]
- [  0   0   1 101   0]
- [  0   1   0   1  80]]
+[[117   1   1   0   1]
+ [  2  62   2   0   3]
+ [  0   0  79   0   1]
+ [  0   0   0 110   0]
+ [  0   0   0   0  66]]
 c)
               precision    recall  f1-score   support
 
-           0       0.98      0.94      0.96        94
-           1       0.99      0.97      0.98        89
-           2       0.94      0.97      0.96        78
-           3       0.99      0.99      0.99       102
-           4       0.94      0.98      0.96        82
+           0       0.98      0.97      0.98       120
+           1       0.98      0.90      0.94        69
+           2       0.96      0.99      0.98        80
+           3       1.00      1.00      1.00       110
+           4       0.93      1.00      0.96        66
 
-    accuracy                           0.97       445
+    accuracy                           0.98       445
    macro avg       0.97      0.97      0.97       445
-weighted avg       0.97      0.97      0.97       445
+weighted avg       0.98      0.98      0.98       445
 
 d)
-accuracy: 0.9685393258426966
-macro average F1: 0.967609843987432
-weighted average F1: 0.9685825352648981
+accuracy: 0.9752808988764045
+macro average F1: 0.9714571457824468
+weighted average F1: 0.9751093343844335
 e)
 Probability of class business: 0.2292134831460674
 Probability of class entertainment: 0.17348314606741572
@@ -89,52 +90,53 @@ f)
 Size of vocabulary: 29126
 g)
 Number of word-tokens in each class:
-business: 78228.0
-entertainment: 53926.0
-politics: 79428.0
-sport: 69395.0
-tech: 86181.0
+business: 70923.0
+entertainment: 58199.0
+politics: 78240.0
+sport: 67890.0
+tech: 87217.0
 h)
-Number of word-tokens in corpus: 367158.0
+Number of word-tokens in corpus: 362469.0
 i)
-Number of zeros in business: 18440
- With percentage of 23.572122513677968
-Number of zeros in entertainment: 19169
- With percentage of 35.54686051255424
-Number of zeros in politics: 19201
- With percentage of 24.174094777660272
-Number of zeros in sport: 19737
- With percentage of 28.441530369623173
-Number of zeros in tech: 18251
- With percentage of 21.177521727526948
+Number of zeros in business: 19075
+ With percentage of 5.262519001624966
+Number of zeros in entertainment: 18763
+ With percentage of 5.176442675097732
+Number of zeros in politics: 19231
+ With percentage of 5.305557164888584
+Number of zeros in sport: 19851
+ With percentage of 5.476606275295267
+Number of zeros in tech: 18422
+ With percentage of 5.0823656643740565
 j)
-Number of ones in corpus: 20916
- With percentage of 5.69673001813933
-a)
+Number of ones in corpus: 20560
+ With percentage of 5.6722092096151675
+k)
+The log probabilities of political and arrangement are: -9.088033027655857 and -10.987239650721653a)
 ******************** MultinomialNB default values try 3 with smoothing = 0.0001 ********************
 b)
-[[ 88   0   3   0   3]
- [  0  86   2   0   1]
- [  2   0  76   0   0]
- [  0   0   1 101   0]
- [  0   1   0   0  81]]
+[[114   2   3   0   1]
+ [  1  64   2   0   2]
+ [  0   0  79   0   1]
+ [  0   0   0 110   0]
+ [  0   0   0   0  66]]
 c)
               precision    recall  f1-score   support
 
-           0       0.98      0.94      0.96        94
-           1       0.99      0.97      0.98        89
-           2       0.93      0.97      0.95        78
-           3       1.00      0.99      1.00       102
-           4       0.95      0.99      0.97        82
+           0       0.99      0.95      0.97       120
+           1       0.97      0.93      0.95        69
+           2       0.94      0.99      0.96        80
+           3       1.00      1.00      1.00       110
+           4       0.94      1.00      0.97        66
 
     accuracy                           0.97       445
    macro avg       0.97      0.97      0.97       445
 weighted avg       0.97      0.97      0.97       445
 
 d)
-accuracy: 0.9707865168539326
-macro average F1: 0.9697856476536598
-weighted average F1: 0.9708601423168249
+accuracy: 0.9730337078651685
+macro average F1: 0.9704727567092108
+weighted average F1: 0.9729881986477189
 e)
 Probability of class business: 0.2292134831460674
 Probability of class entertainment: 0.17348314606741572
@@ -145,13 +147,13 @@ f)
 Size of vocabulary: 29126
 g)
 Number of word-tokens in each class:
-business: 78230.91260000001
-entertainment: 53928.91260000001
-politics: 79430.91260000003
-sport: 69397.91260000001
-tech: 86183.91260000001
+business: 70925.91260000001
+entertainment: 58201.91260000001
+politics: 78242.91260000003
+sport: 67892.91260000001
+tech: 87219.91260000001
 h)
-Number of word-tokens in corpus: 367172.5630000001
+Number of word-tokens in corpus: 362471.9126
 i)
 Number of zeros in business: 0
  With percentage of 0.0
@@ -166,31 +168,32 @@ Number of zeros in tech: 0
 j)
 Number of ones in corpus: 0
  With percentage of 0.0
-a)
+k)
+The log probabilities of political and arrangement are: -10.921828618641122 and -14.345794405367139a)
 ******************** MultinomialNB default values try 4 with smoothing = 0.9 ********************
 b)
-[[ 88   0   2   0   4]
- [  0  86   2   0   1]
- [  2   0  76   0   0]
- [  0   0   1 101   0]
- [  0   1   0   1  80]]
+[[117   1   1   0   1]
+ [  2  62   2   0   3]
+ [  0   0  79   0   1]
+ [  0   0   0 110   0]
+ [  0   0   0   0  66]]
 c)
               precision    recall  f1-score   support
 
-           0       0.98      0.94      0.96        94
-           1       0.99      0.97      0.98        89
-           2       0.94      0.97      0.96        78
-           3       0.99      0.99      0.99       102
-           4       0.94      0.98      0.96        82
+           0       0.98      0.97      0.98       120
+           1       0.98      0.90      0.94        69
+           2       0.96      0.99      0.98        80
+           3       1.00      1.00      1.00       110
+           4       0.93      1.00      0.96        66
 
-    accuracy                           0.97       445
+    accuracy                           0.98       445
    macro avg       0.97      0.97      0.97       445
-weighted avg       0.97      0.97      0.97       445
+weighted avg       0.98      0.98      0.98       445
 
 d)
-accuracy: 0.9685393258426966
-macro average F1: 0.967609843987432
-weighted average F1: 0.9685825352648981
+accuracy: 0.9752808988764045
+macro average F1: 0.9714571457824468
+weighted average F1: 0.9751093343844335
 e)
 Probability of class business: 0.2292134831460674
 Probability of class entertainment: 0.17348314606741572
@@ -201,13 +204,13 @@ f)
 Size of vocabulary: 29126
 g)
 Number of word-tokens in each class:
-business: 104441.40000000001
-entertainment: 80139.4
-politics: 105641.40000000001
-sport: 95608.40000000001
-tech: 112394.40000000001
+business: 97136.40000000001
+entertainment: 84412.4
+politics: 104453.40000000001
+sport: 94103.4
+tech: 113430.40000000001
 h)
-Number of word-tokens in corpus: 498224.9999999999
+Number of word-tokens in corpus: 388682.4
 i)
 Number of zeros in business: 0
  With percentage of 0.0
@@ -222,3 +225,5 @@ Number of zeros in tech: 0
 j)
 Number of ones in corpus: 0
  With percentage of 0.0
+k)
+The log probabilities of political and arrangement are: -9.088577046745577 and -11.024678267009055

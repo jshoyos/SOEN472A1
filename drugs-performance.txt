@@ -1,44 +1,44 @@
 a)
 ******************** Gaussian Naive Bayes Classifier ********************
 b)
-[[ 5  0  0  0  0]
- [ 0  4  0  0  0]
- [ 0  0  4  0  0]
- [ 0  0  0 13  0]
- [ 4  0  2  0 18]]
+[[ 3  0  0  0  0]
+ [ 0  3  0  0  0]
+ [ 0  0  7  0  0]
+ [ 0  0  0 10  1]
+ [ 6  1  6  0 13]]
 c)
               precision    recall  f1-score   support
 
-       drugA       0.56      1.00      0.71         5
-       drugB       1.00      1.00      1.00         4
-       drugC       0.67      1.00      0.80         4
-       drugX       1.00      1.00      1.00        13
-       drugY       1.00      0.75      0.86        24
+       drugA       0.33      1.00      0.50         3
+       drugB       0.75      1.00      0.86         3
+       drugC       0.54      1.00      0.70         7
+       drugX       1.00      0.91      0.95        11
+       drugY       0.93      0.50      0.65        26
 
-    accuracy                           0.88        50
-   macro avg       0.84      0.95      0.87        50
-weighted avg       0.93      0.88      0.89        50
+    accuracy                           0.72        50
+   macro avg       0.71      0.88      0.73        50
+weighted avg       0.84      0.72      0.73        50
 
 d)
-accuracy: 0.88
-macro average F1: 0.8742857142857142
-weighted average F1: 0.8868571428571428
+accuracy: 0.72
+macro average F1: 0.7319047619047618
+weighted average F1: 0.726952380952381
 a)
 ******************** Base Decision Tree Classifier ********************
 b)
-[[ 5  0  0  0  0]
- [ 0  4  0  0  0]
- [ 0  0  4  0  0]
- [ 0  0  0 13  0]
- [ 0  0  0  0 24]]
+[[ 3  0  0  0  0]
+ [ 0  3  0  0  0]
+ [ 0  0  7  0  0]
+ [ 0  0  0 11  0]
+ [ 0  0  0  0 26]]
 c)
               precision    recall  f1-score   support
 
-       drugA       1.00      1.00      1.00         5
-       drugB       1.00      1.00      1.00         4
-       drugC       1.00      1.00      1.00         4
-       drugX       1.00      1.00      1.00        13
-       drugY       1.00      1.00      1.00        24
+       drugA       1.00      1.00      1.00         3
+       drugB       1.00      1.00      1.00         3
+       drugC       1.00      1.00      1.00         7
+       drugX       1.00      1.00      1.00        11
+       drugY       1.00      1.00      1.00        26
 
     accuracy                           1.00        50
    macro avg       1.00      1.00      1.00        50
@@ -53,19 +53,19 @@ a)
 
 ******************** Best hyper parameters found: {'criterion': 'gini', 'max_depth': 60, 'min_samples_split': 20} ********************
 b)
-[[ 5  0  0  0  0]
- [ 0  4  0  0  0]
- [ 0  0  4  0  0]
- [ 0  0  0 13  0]
- [ 0  0  0  0 24]]
+[[ 3  0  0  0  0]
+ [ 0  3  0  0  0]
+ [ 0  0  7  0  0]
+ [ 0  0  0 11  0]
+ [ 0  0  0  0 26]]
 c)
               precision    recall  f1-score   support
 
-       drugA       1.00      1.00      1.00         5
-       drugB       1.00      1.00      1.00         4
-       drugC       1.00      1.00      1.00         4
-       drugX       1.00      1.00      1.00        13
-       drugY       1.00      1.00      1.00        24
+       drugA       1.00      1.00      1.00         3
+       drugB       1.00      1.00      1.00         3
+       drugC       1.00      1.00      1.00         7
+       drugX       1.00      1.00      1.00        11
+       drugY       1.00      1.00      1.00        26
 
     accuracy                           1.00        50
    macro avg       1.00      1.00      1.00        50
@@ -78,86 +78,86 @@ weighted average F1: 1.0
 a)
 ******************** Perceptron Classifier ********************
 b)
-[[ 0  0  0  3  2]
- [ 0  0  0  4  0]
- [ 0  0  0  3  1]
- [ 0  0  0  9  4]
- [ 0  0  0  3 21]]
+[[ 0  0  0  1  2]
+ [ 0  0  0  2  1]
+ [ 0  0  0  4  3]
+ [ 0  0  0  5  6]
+ [ 0  0  0  0 26]]
 c)
               precision    recall  f1-score   support
 
-       drugA       0.00      0.00      0.00         5
-       drugB       0.00      0.00      0.00         4
-       drugC       0.00      0.00      0.00         4
-       drugX       0.41      0.69      0.51        13
-       drugY       0.75      0.88      0.81        24
+       drugA       0.00      0.00      0.00         3
+       drugB       0.00      0.00      0.00         3
+       drugC       0.00      0.00      0.00         7
+       drugX       0.42      0.45      0.43        11
+       drugY       0.68      1.00      0.81        26
 
-    accuracy                           0.60        50
-   macro avg       0.23      0.31      0.26        50
-weighted avg       0.47      0.60      0.52        50
+    accuracy                           0.62        50
+   macro avg       0.22      0.29      0.25        50
+weighted avg       0.45      0.62      0.52        50
 
 d)
-accuracy: 0.6
-macro average F1: 0.2643956043956044
-weighted average F1: 0.5214065934065935
+accuracy: 0.62
+macro average F1: 0.24945652173913047
+weighted average F1: 0.5181521739130436
 a)
 ******************** Base Multi-Layered Perceptron Classifier ********************
 b)
-[[ 0  0  0  1  4]
- [ 0  0  0  4  0]
- [ 0  0  0  2  2]
- [ 0  0  0  8  5]
- [ 0  0  0  0 24]]
+[[ 0  0  0  1  2]
+ [ 0  0  0  3  0]
+ [ 0  0  0  5  2]
+ [ 0  0  0  6  5]
+ [ 0  0  0  2 24]]
 c)
               precision    recall  f1-score   support
 
-       drugA       0.00      0.00      0.00         5
-       drugB       0.00      0.00      0.00         4
-       drugC       0.00      0.00      0.00         4
-       drugX       0.53      0.62      0.57        13
-       drugY       0.69      1.00      0.81        24
+       drugA       0.00      0.00      0.00         3
+       drugB       0.00      0.00      0.00         3
+       drugC       0.00      0.00      0.00         7
+       drugX       0.35      0.55      0.43        11
+       drugY       0.73      0.92      0.81        26
 
-    accuracy                           0.64        50
-   macro avg       0.24      0.32      0.28        50
-weighted avg       0.47      0.64      0.54        50
+    accuracy                           0.60        50
+   macro avg       0.22      0.29      0.25        50
+weighted avg       0.46      0.60      0.52        50
 
 d)
-accuracy: 0.64
-macro average F1: 0.276997578692494
-weighted average F1: 0.5390799031476998
+accuracy: 0.6
+macro average F1: 0.2484261501210654
+weighted average F1: 0.5173365617433414
 a)
 ******************** Top Multi-Layered Perceptron Classifier ********************
 
-******************** Best hyper parameters found: {'activation': 'identity', 'hidden_layer_sizes': (2, 90), 'solver': 'sgd'} ********************
+******************** Best hyper parameters found: {'activation': 'identity', 'hidden_layer_sizes': (2, 90), 'solver': 'adam'} ********************
 b)
-[[ 0  0  0  1  4]
- [ 0  0  0  4  0]
- [ 0  0  0  3  1]
- [ 0  3  0  6  4]
- [ 0  0  0  1 23]]
+[[ 0  1  0  2  0]
+ [ 0  2  0  1  0]
+ [ 0  1  0  3  3]
+ [ 0  1  0  8  2]
+ [ 0  0  0  1 25]]
 c)
               precision    recall  f1-score   support
 
-       drugA       0.00      0.00      0.00         5
-       drugB       0.00      0.00      0.00         4
-       drugC       0.00      0.00      0.00         4
-       drugX       0.40      0.46      0.43        13
-       drugY       0.72      0.96      0.82        24
+       drugA       0.00      0.00      0.00         3
+       drugB       0.40      0.67      0.50         3
+       drugC       0.00      0.00      0.00         7
+       drugX       0.53      0.73      0.62        11
+       drugY       0.83      0.96      0.89        26
 
-    accuracy                           0.58        50
-   macro avg       0.22      0.28      0.25        50
-weighted avg       0.45      0.58      0.51        50
+    accuracy                           0.70        50
+   macro avg       0.35      0.47      0.40        50
+weighted avg       0.57      0.70      0.63        50
 
 d)
-accuracy: 0.58
-macro average F1: 0.25
-weighted average F1: 0.5057142857142857
+accuracy: 0.7
+macro average F1: 0.40164835164835166
+weighted average F1: 0.6296703296703297
 
 *************************Averages*************************
 
 
 GaussianNB average accuracy, average macro-average F1 and average weighted-average F1 respectively: 
-0.8800000000000001 | 0.8742857142857142 | 0.8868571428571428
+0.72 | 0.7319047619047618 | 0.7269523809523811
 
 Base Decision Tree average accuracy, average macro-average F1 and average weighted-average F1 respectively: 
 1.0 | 1.0 | 1.0
@@ -166,25 +166,25 @@ Top Decision Tree average accuracy, average macro-average F1 and average weighte
 1.0 | 1.0 | 1.0
 
 Perceptron average accuracy, average macro-average F1 and average weighted-average F1 respectively:
-0.5999999999999999 | 0.26439560439560433 | 0.5214065934065936
+0.62 | 0.24945652173913047 | 0.5181521739130436
 
 Base MLP average accuracy, average macro-average F1 and average weighted-average F1 respectively: 
-0.6300000000000001 | 0.27234531813005464 | 0.5329398381335506
+0.618 | 0.2604530203357605 | 0.5378379513951448
 
 Top MLP average accuracy, average macro-average F1 and average weighted-average F1 respectively: 
-0.568 | 0.26343097643097646 | 0.48739379043895176
+0.622 | 0.33551355904387364 | 0.563874302052385
 
 *************************Standard Deviations*************************
 
 
-Standard deviation GaussianNB: 1.1102230246251565e-16 | 0.0 | 0.0
+Standard deviation GaussianNB: 0.0 | 0.0 | 1.1102230246251565e-16
 
 Standard deviation Base Decision Tree: 0.0 | 0.0 | 0.0
 
 Standard deviation Top Decision Tree: 0.0 | 0.0 | 0.0
 
-Standard deviation Perceptron: 1.1102230246251565e-16 | 5.551115123125783e-17 | 1.1102230246251565e-16
+Standard deviation Perceptron: 0.0 | 0.0 | 0.0
 
-Standard deviation Base MLP: 0.010000000000000009 | 0.0043386491659821854 | 0.006947068884746252
+Standard deviation Base MLP: 0.0060000000000000045 | 0.004010053690370899 | 0.00693757082510896
 
-Standard deviation Top MLP: 0.09641576634555162 | 0.07671030172979536 | 0.09887609210018487
+Standard deviation Top MLP: 0.037363083384538816 | 0.06455593424473305 | 0.03624679203000405

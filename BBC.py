@@ -7,6 +7,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.metrics import accuracy_score, classification_report, confusion_matrix, f1_score
+import math
 
 BBC_PATH = "./DATA/BBC/"
 
@@ -70,6 +71,24 @@ def Task1(try_numb, x_train, x_test, y_train, y_test, smoothing=None):
     
     ones_in_class = np.count_nonzero(word_tokens == 1)
     Write_to_file(f"j)\nNumber of ones in corpus: {ones_in_class}\n With percentage of {ones_in_class * 100/total_count_word_tokens}\n")
+
+    Write_to_file("k)\n")
+    
+    index1 = vectorizer.get_feature_names_out().searchsorted("political")
+    index2 = vectorizer.get_feature_names_out().searchsorted("arrangement")
+    i = 0
+    log_prob_poli = 0
+    log_prob_arrange = 0
+    w_log_prob_poli = 0
+    w_log_prob_arrange = 0
+    for key, value in classes_dic.items():
+        prior = value/total_files
+        log_prob_poli = classification.feature_log_prob_[i][index1]
+        log_prob_arrange = classification.feature_log_prob_[i][index2]
+        i = i + 1
+        w_log_prob_poli += (log_prob_poli * prior)
+        w_log_prob_arrange += (log_prob_arrange * prior)
+    Write_to_file("The log probabilities of political and arrangement are: "+str(w_log_prob_poli)+" and "+str(w_log_prob_arrange))
 
 data = ds.load_files(BBC_PATH, encoding="latin1")
 
