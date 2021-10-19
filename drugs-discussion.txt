@@ -1,0 +1,3 @@
+Does the same model give you the same performance every time? 
+The performance is almost the same every time as the tests are being run on the same training set, which further explains why the average standard deviation of  the models is approximately 0. An interesting observation is that the Base MLP and the Top MLP have a larger standard deviation compared to the other models. This can be because there is a minor disperse as the MLPs reach a global optima stochastically. 
+Accuracy-wise, the models for GaussianNB, Base Decision Tree and Top Decision Tree had a much better accuracy than Perceptron, Base MLP and Top MLP.  Reasons being is that they are trained  to  predict Drug X and Y, since the dataset is unbalanced.
